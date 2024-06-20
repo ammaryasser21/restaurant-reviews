@@ -48,3 +48,15 @@ Text data is preprocessed through the following steps:
 - Removing stop words: Eliminating common words that do not contribute to the sentiment.
 - Lemmatization: Converting words to their base form.
 - Removing punctuation.
+
+## Feature Extraction
+The Bag of Words method is used to convert the text data into numerical features. The text data is transformed into a matrix of token counts.
+
+## Model Training
+The data is split into training and testing sets, and a RandomForestClassifier is trained on the training data. The classifier is used to predict the sentiment of the reviews in the test set.
+
+## Model Evaluation
+The performance of the model is evaluated using accuracy, precision, recall, and F1 score. A classification report is generated to provide detailed metrics on the model's performance.
+
+## Conclusion
+The project successfully preprocesses the text data, extracts features using the Bag of Words method, trains a RandomForestClassifier, and evaluates the model's performance. The model provides valuable insights into the sentiment of restaurant reviews, which can be useful for business decisions and customer feedback analysis.
